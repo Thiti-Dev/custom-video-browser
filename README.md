@@ -1,24 +1,13 @@
-# custom-video-browser
+## 🎓 custom-video-browser => using Vue
 
-## Project setup
-```
-yarn install
-```
+Just sharpending my vue skills ( in -development )
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+<p align="center">
+  <b>: Contact me By :</b><br>
+  <a href="https://www.facebook.com/thiti.developer">Facebook</a> |
+  <a href="https://www.instagram.com/thiti.mwk/">Instagram</a> |
+  <a href="https://www.linkedin.com/in/thiti-mahawannakit-558791183/">LinkedIn</a>
+  <br><br>
+  <img src="https://media.giphy.com/media/h1u6yvxlVKmfLiSryA/giphy.gif" width="250" height="220">
+</p>
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
