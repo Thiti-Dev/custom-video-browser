@@ -1,7 +1,5 @@
 <template>
-  <ul class="list-group">
-    VideoList
-    {{ videos.length }}
+  <ul class="col-md-4">
     <VideoListItem
       @videoSelect="onVideoSelect"
       v-for="video in videos"
