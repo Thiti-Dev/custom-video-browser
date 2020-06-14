@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange" />
-    <VideoList :videos="videos" />
+    <VideoList @videoSelect="onVideoSelect" :videos="videos" />
   </div>
 </template>
 
@@ -40,6 +40,9 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+    onVideoSelect(video) {
+      console.log(video);
     }
   }
 };
