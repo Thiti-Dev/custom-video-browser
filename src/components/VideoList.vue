@@ -1,5 +1,5 @@
 <template>
-  <ul class="col-md-4">
+  <ul :class="getClassnameAdjusted">
     <VideoListItem
       @videoSelect="onVideoSelect"
       v-for="video in videos"
@@ -16,13 +16,23 @@ export default {
   components: {
     VideoListItem
   },
+  computed: {
+    getClassnameAdjusted() {
+      if (this.is_any_selected) {
+        return `col-md-4`;
+      } else {
+        return `col-md-12`;
+      }
+    }
+  },
   methods: {
     onVideoSelect(video) {
       this.$emit("videoSelect", video);
     }
   },
   props: {
-    videos: Array
+    videos: Array,
+    is_any_selected: Boolean
   }
 };
 </script>

@@ -3,7 +3,11 @@
     <SearchBar @termChange="onTermChange" />
     <div class="row">
       <VideoDetail :video="selectedVideo" />
-      <VideoList @videoSelect="onVideoSelect" :videos="videos" />
+      <VideoList
+        :is_any_selected="isAnyVideoSelected"
+        @videoSelect="onVideoSelect"
+        :videos="videos"
+      />
     </div>
   </div>
 </template>
@@ -25,6 +29,11 @@ export default {
       videos: [],
       selectedVideo: null
     };
+  },
+  computed: {
+    isAnyVideoSelected() {
+      return !!this.selectedVideo;
+    }
   },
   methods: {
     async onTermChange(search_str) {
